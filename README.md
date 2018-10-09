@@ -11,7 +11,7 @@ Tasks for deep learning course attendee
 git remote add -t master lnmo http://github.com/denklewer/lnmo-deep-learning/
 ```
 
-You can watch list of remotes using `git remote show` command. The result should be like the following:
+You can watch list of remotes using `git remote show` or `git remote -v` command. The result should be like the following:
 
 ```
 # git remote show
