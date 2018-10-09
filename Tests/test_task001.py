@@ -14,10 +14,6 @@ class TestTask001(TestCase):
         result = self.calculator.sum(np.array([[1, 1], [2, 2]]), np.array([[1, 1], [2, 2]]))
         np.testing.assert_array_equal(result, np.array([[2, 2], [4, 4]]))
 
-    # def test_sum_dif(self):
-    #     result = self.calculator.sum(np.array([[1, 1], [2, 2]]), np.array([1, 1]))
-    #     np.testing.assert_array_equal(result, np.array([[2, 2], [2, 2]]))
-
     def test_sum_error(self):
         with self.assertRaises(TypeError):
             self.calculator.sum(1, 2)
