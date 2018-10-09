@@ -16,6 +16,4 @@ class TestDemoClass(TestCase):
     def test_divide_error(self):
         calculator = DemoClass()
         with self.assertRaises(TypeError):
-            calculator.divide(4,0)
-
-
+            calculator.divide("abbb", "bbbb")
