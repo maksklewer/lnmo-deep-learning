@@ -3,17 +3,18 @@ from Tasks.Task000 import DemoClass
 
 
 class TestDemoClass(TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.calculator = DemoClass()
+
     def test_demo(self):
-        calculator = DemoClass()
-        res = calculator.demo(1, 2)
+        res = self.calculator.demo(1, 2)
         self.assertEqual(res, 3)
 
     def test_divide_normal(self):
-        calculator = DemoClass()
-        res = calculator.divide(4, 2)
+        res = self.calculator.divide(4, 2)
         self.assertEqual(res, 2)
 
     def test_divide_error(self):
-        calculator = DemoClass()
         with self.assertRaises(TypeError):
-            calculator.divide("abbb", "bbbb")
+            self.calculator.divide("abbb", "bbbb")
