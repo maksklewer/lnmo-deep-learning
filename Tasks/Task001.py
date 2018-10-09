@@ -12,7 +12,7 @@ class MatrixCalculator:
         :param m1: matrix 2
         :return: function pointer
         """
-        return np.matrix('2 2;4 4')
+        return np.matrix('')
 
     @staticmethod
     def mult(m1, m2):
