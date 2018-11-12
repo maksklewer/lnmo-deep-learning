@@ -2,7 +2,7 @@ import math
 import numpy as np
 
 
-class MatrixPo:
+class MatrixPocessor:
 
     @staticmethod
     def minor(A, i, j):
@@ -31,12 +31,71 @@ class MatrixPo:
         return np.matrix('')
 
     @staticmethod
-    def mult(m1, m2):
+    def detALaplace(A):
         """
-        Multiplies 2 matrices
-        :param m2: matrix 1
-        :param m1: matrix 2
-        :return: function pointer
+        <eng>
+            Calculates determinant for given matrix A, using Laplace row/column expansion method.
+            https://en.wikipedia.org/wiki/Laplace_expansion
+            https://en.wikipedia.org/wiki/Determinant#Laplace's_formula_and_the_adjugate_matrix
+        </eng>
+        <rus>
+            Вычисляет определитель данной матрицы A, используя Метод разложения по строке/столбцу Лапласа.
+            см: https://ru.wikipedia.org/wiki/Теорема_Лапласа
+                https://ru.wikipedia.org/wiki/Определитель
+         </rus>
+        :param A:
+            <eng> input matrix <eng>
+            <rus> исходная матрица <rus>
+        :return:
+            <eng> Matrix Determinant </eng>
+            <rus> Определитель матрицы </rus>
         """
-        return np.matrix('')
+        return ''
 
+    @staticmethod
+    def GaussianElimination(A,b):
+        """
+        <eng>
+            Solves system linear equation given in matrix form using Gaussian elimination method
+
+            https://en.wikipedia.org/wiki/Gaussian_elimination
+            Example:
+                If we have such SLE:
+                    |3*x1+1*x2 = 10
+                    |2*x1+3*x2 = 16
+                The input will be following:
+                    Matrix A : [[ 3 , 1 ],
+                                 [ 2 , 3 ]]
+                    Vector b : [ 10 , 16
+                Output:
+                    Vector: [2, 4]
+            https://en.wikipedia.org/wiki/Gaussian_elimination
+            http://matrixcalc.org/slu.html
+
+        </eng>
+        <rus>
+            Решает систему линейных уравнений используя метод Гаусса.
+            Пример:
+                Если дана система уравнений:
+                    |3*x1+1*x2 = 10
+                    |2*x1+3*x2 = 16
+                То входными данными будут:
+                    Матрица A : [[ 3 , 1 ],
+                                 [ 2 , 3 ]]
+                    Вектор b : [ 10 , 16
+                Результат работы программы:
+                    Вектор : [2, 4]
+            https://ru.wikipedia.org/wiki/Метод_Гаусса
+            http://matrixcalc.org/slu.html
+         </rus>
+        :param A:
+            <eng> input matrix <eng>
+            <rus> исходная матрица <rus>
+        :param b:
+            <eng> vector of free coefficients<eng>
+            <rus> свободные коэффициенты <rus>
+        :return:
+            <eng> solution vector  x1,...xn </eng>
+            <rus> вектор-решение СЛОУ x1,...,xn </rus>
+        """
+        return np.array('')
