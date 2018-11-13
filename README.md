@@ -8,7 +8,7 @@ Tasks for deep learning course attendee
 - Connect your branch to my repository by executing the following command:
  
 ```
-git remote add -t master lnmo http://github.com/denklewer/lnmo-deep-learning/
+git remote add lnmo http://github.com/denklewer/lnmo-deep-learning/
 ```
 
 You can watch list of remotes using `git remote show` or `git remote -v` command. The result should be like the following:
