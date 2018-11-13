@@ -29,7 +29,3 @@ class TestTask001(TestCase):
     def test_mult_error(self):
         with self.assertRaises(TypeError):
             self.calculator.mult(1, 1)
-
-
-if __name__ == '__main__':
-    unittest.main()
