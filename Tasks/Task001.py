@@ -12,6 +12,7 @@ class MatrixCalculator:
         :param m1: matrix 2
         :return: function pointer
         """
+        sadsdfsdfsdfsdf
         return np.matrix('')
 
     @staticmethod
